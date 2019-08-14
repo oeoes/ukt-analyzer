@@ -1,0 +1,37 @@
+{% extends "app/base/base.html" %}
+
+{% block konten %}
+<div class="progress">
+    <div class="meter"></div>
+</div>
+<div class="container pb-4">
+    <div class="row blok-pertanyaan">
+
+        <form action="{% url 'classification_app:predict.ukt' %}" method="POST">
+            {% csrf_token %}
+
+            {% include "app/questions/q1.html" %}
+
+            {% include "app/questions/q2.html" %}
+
+            {% include "app/questions/q3.html" %}
+
+            {% include "app/questions/q4.html" %}
+
+            {% include "app/questions/q5.html" %}
+
+            {% include "app/questions/q6.html" %}
+
+            {% include "app/questions/q7.html" %}
+
+            {% include "app/questions/q8.html" %}
+
+            {% include "app/questions/q9.html" %}
+
+            {% include "app/questions/bio.html" %}
+
+        </form>
+
+    </div>
+</div>
+{% endblock %}

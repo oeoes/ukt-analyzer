@@ -1,0 +1,53 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>UKT - Analyzer</title>
+    <link rel="stylesheet" href="{% static "vendor/bootstrap/css/bootstrap.min.css" %}">
+    <link rel="stylesheet" href="{% static "asset/css/ukt-style.css" %} ">
+    <link rel="stylesheet" href="{% static "vendor/fontawesome-free/css/fontawesome.min.css" %} ">
+    <link rel="stylesheet" href="{% static "vendor/fontawesome-free/css/all.min.css" %} ">
+    <link rel="stylesheet" href="{% static "vendor/animate/animate.css" %} ">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat|Righteous&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="logo-univ">
+        <a href="https://www.upnvj.ac.id/" target="_blank"><img src="{% static 'images/logo_univ.png' %}" alt=""></a>
+    </div>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">UKT-Analyzer</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="{% url 'classification_app:ukt.analyzer' %}"><i class="fas fa-home"></i> Home <span class="sr-only">(current)</span></a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    {% block konten %}
+
+    {% endblock %}
+
+    <script src="{% static "vendor/jquery/jquery.js" %}"></script>
+    <script src="{% static "vendor/bootstrap/js/bootstrap.min.js" %}"></script>
+    <script src="{% static "asset/js/ukt-js.js" %}"></script>
+    {% block custom_js %}
+    
+    {% endblock custom_js %}
+</body>
+
+</html>

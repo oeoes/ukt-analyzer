@@ -1,0 +1,100 @@
+{% extends "app/base/base.html" %}
+
+{% block konten %}
+<div class="load-cont">
+    <div class="cont-l">
+        <div class="l1 mb-1"></div>
+        <div class="l2 mb-1"></div>
+        <div class="l3 mb-1"></div>
+        <div class="text-center analyze">Analyzing...</div>
+    </div>
+</div>
+<div class="container card-hide">
+    <div class="jumbotron hasil shadow-sm mt-4 animated fadeInUp">
+        <div class="display-3 text-center">Golongan {{ golongan }}</div>
+        <div class="display-1 text-center">Rp. {{ nominal }}</div>
+    </div>
+
+    <div class="jumbotron hasil shadow-sm">
+        <div class="row">
+            <div class="col-6">
+                <div class="h2">Personal info</div>
+                <table class="table table-hover">
+                    <tr>
+                        <th>Skor UKT</th>
+                        <td>{{ skor }}</td>
+                    </tr>
+                    <tr>
+                        <th>Nama</th>
+                        <td>{{ nama }}</td>
+                    </tr>
+                    <tr>
+                        <th>Jurusan</th>
+                        <td>{{ jurusan }}</td>
+                    </tr>
+                    <tr>
+                        <th>NIM</th>
+                        <td>{{ nim }}</td>
+                    </tr>
+                    <tr>
+                        <th>E-mail</th>
+                        <td>{{ email }}</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="col-6">
+                <div class="h2">Submitted data</div>
+                <table class="table table-hover">
+                    <tr>
+                        <th>Penghasilan Ayah</th>
+                        <td>{{ p_ayah }}</td>
+                    </tr>
+                    <tr>
+                        <th>Penghasilan tambahan Ayah</th>
+                        <td>{{ pt_ayah }}</td>
+                    </tr>
+                    <tr>
+                        <th>Penghasilan Ibu</th>
+                        <td>{{ p_ibu }}</td>
+                    </tr>
+                    <tr>
+                        <th>Penghasilan tambahan Ibu</th>
+                        <td>{{ pt_ibu }}</td>
+                    </tr>
+                    <tr>
+                        <th>Kepemilikan rumah</th>
+                        <td>{{ rumah }}</td>
+                    </tr>
+                    <tr>
+                        <th>Total pajak roda 2</th>
+                        <td>{{ r2 }}</td>
+                    </tr>
+                    <tr>
+                        <th>Total pajak roda 4</th>
+                        <td>{{ r4 }}</td>
+                    </tr>
+                    <tr>
+                        <th>Langganan daya listrik</th>
+                        <td>{{ listrik }}</td>
+                    </tr>
+                    <tr>
+                        <th>Pajak PBB</th>
+                        <td>{{ pbb }}</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock konten %}
+
+{% block custom_js %}
+<script>
+    $(document).ready(function () {
+        setTimeout(() => {
+            $('.load-cont').fadeOut('fast')
+            $('.container').removeClass('card-hide')
+        }, 6000);
+    })
+</script>
+{% endblock custom_js %}

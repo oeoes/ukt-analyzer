@@ -1,0 +1,68 @@
+
+{% load static %}<!-- Pertanyaan 1 -->
+<div class="col-md-10 offset-md-1 animated slideInUp q-wrap card-hide">
+    <div class="icon animated rubberBand d-1">
+        <img src="{% static 'images/resume.svg' %}" alt="">
+    </div>
+    <input type="submit" class="btn btn-success q-button" value="Selesai dan Submit">
+    <div class="card card-property border-0 shadow mt-5">
+        <div class="card-header">
+            <div class="h2">Silahkan lengkapi data diri Anda</div>
+        </div>
+
+        <div class="container p-5" style="width: 100%">
+
+            <div class="row">
+
+                <div class="col-md-6 mb-3">
+                    <div class="form-group">
+                        <label for="name">Nama</label>
+                        <input id="name" required type="text" class="form-control" name="name" placeholder="Nama">
+                    </div>
+                </div>
+
+                <div class="col-md-6 mb-3">
+                    <div class="form-group">
+                        <label for="nim">NIM</label>
+                        <input id="nim" required type="text" class="form-control" name="nim" placeholder="NIM">
+                    </div>
+                </div>
+
+                <div class="col-md-6 mb-3">
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input id="email" required type="email" class="form-control" name="email" placeholder="Email@example.com">
+                    </div>
+                </div>
+
+                <div class="col-md-6 mb-3">
+                    <div class="form-group">
+                        <label for="jurusan">Jurusan</label>
+                        <select required id="jurusan" name="jurusan" id="jurusan" class="form-control">
+                            <option disabled selected value>Pilih jurusan</option>
+                            <option value="mn">S1 Manajemen</option>
+                            <option value="ak">S1 Akuntansi</option>
+                            <option value="ep">S1 Ekonomi Pembangunan</option>
+                            <option value="es">S1 Ekonomi Syariah</option>
+                            <option value="kd">S1 Kedokteran</option>
+                            <option value="tm">S1 Teknik Mesin</option>
+                            <option value="hi">S1 Hubungan Internasional</option>
+                            <option value="if">S1 Informatika</option>
+                            <option value="si">S1 Sistem Informasi</option>
+                            <option value="hk">S1 Hukum</option>
+                            <option value="kp">S1 Keperawatan</option>
+                            <option value="km">S1 Kesehatan Masyarakat</option>
+                            <option value="gz">S1 Gizi</option>
+                            <option value="ti">S1 Teknik Industri</option>
+                            <option value="tp">S1 Teknik Perkapalan</option>
+                            <option value="ik">S1 Ilmu Komunikasi</option>
+                            <option value="ip">S1 Ilmu Politik</option>
+                        </select>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End of pertanyaan 1 -->

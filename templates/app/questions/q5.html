@@ -1,0 +1,50 @@
+{% load static %}
+<!-- Pertanyaan 1 -->
+<div class="col-md-10 offset-md-1 q-wrap card-hide">
+    <div class="icon p-2 animated rubberBand d-1">
+        <img src="{% static 'images/house.svg' %}" alt="">
+    </div>
+    <div class="btn btn-info q-button">Next <i class="fa fa-arrow-down"></i> </div>
+    <div class="card card-property border-0 shadow mt-5">
+        <div class="card-header">
+            <div class="h2">Status kepemilikan rumah</div>
+        </div>
+
+        <div class="container p-5">
+
+            <div class="row">
+                <div class="col-md-6 mb-3">
+                    <label for="rumah1" class="wrapper">
+                        <div class="card p-3" style="width: 100%">
+                            <div class="check hide">
+                                <i class="fas fa-check-circle"></i>
+                            </div>
+                            <div class="row">
+                                <input type="radio" id="rumah1" name="status_kep_rumah" value="0">
+                                <div class="col-12 text-center">
+                                    Tidak Memiliki Rumah
+                                </div>
+                            </div>
+                        </div>
+                    </label>
+                </div>
+
+                <div class="col-md-6 mb-3">
+                    <label for="rumah2" class="wrapper">
+                        <div class="card p-3" style="width: 100%">
+                            <div class="check hide"><i class="fas fa-check-circle"></i></div>
+                            <div class="row">
+                                <input type="radio" id="rumah2" name="status_kep_rumah" value="1">
+                                <div class="col-12 text-center">
+                                    Memiliki Rumah Sendiri
+                                </div>
+                            </div>
+                        </div>
+                    </label>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End of pertanyaan 1 -->
