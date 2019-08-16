@@ -8,3 +8,7 @@ Aplikasi untuk menganalisa Golongan UKT UPNVJ
 ![alt text](https://github.com/oeoes/ukt-analyzer/blob/master/screenshot/4.png)
 ![alt text](https://github.com/oeoes/ukt-analyzer/blob/master/screenshot/5.png)
 ![alt text](https://github.com/oeoes/ukt-analyzer/blob/master/screenshot/6.png)
+
+### Tambahan untuk tanggungan orang tua
+![alt text](https://github.com/oeoes/ukt-analyzer/blob/master/screenshot/7.png)
+![alt text](https://github.com/oeoes/ukt-analyzer/blob/master/screenshot/8.png)
