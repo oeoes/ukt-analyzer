@@ -25,7 +25,7 @@ var main = function () {
     }).on('click', event => {
 
         $('.progress').children().height('+=0').animate({
-            height: '+=11.111111%'
+            height: '+=10%'
         }, 1000)
 
         $(event.currentTarget).fadeOut('slow')

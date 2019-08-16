@@ -35,3 +35,18 @@ def predict_data(data):
 def decide_golongan(jurusan, skor_ukt):
     gol = j.jurusan(jurusan, skor_ukt)
     return gol
+
+def analyze_tanggungan(skor_ukt, tanggungan):
+    category = {
+        '0': 0,
+        '1': 2,
+        '2': 4,
+        '3': 6,
+        '4': 8,
+        '5': 10,
+        '6': 12,
+        '7': 14,
+    }
+
+    result = skor_ukt - ((category.get(tanggungan) * skor_ukt) / 100)
+    return result

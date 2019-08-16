@@ -16,7 +16,7 @@ def predict_ukt(request):
         request.POST.get('daya_listrik'),
         request.POST.get('pbb'),
     ])
-    hasil = mechine.decide_golongan(request.POST.get('jurusan'), mechine.predict_data(data))
+    hasil = mechine.decide_golongan(request.POST.get('jurusan'), mechine.analyze_tanggungan(mechine.predict_data(data), request.POST.get('tanggungan')))
     context = {
         'golongan': hasil.get('golongan'),
         'nominal': hasil.get('nominal'),
@@ -34,6 +34,7 @@ def predict_ukt(request):
         'r4': processor.pajakr4(request.POST.get('pajak_r4')),
         'listrik': processor.listrik(request.POST.get('daya_listrik')),
         'pbb': processor.pbb(request.POST.get('pbb')),
+        'tanggungan': processor.tanggungan(request.POST.get('tanggungan')),
     }
     return render(request, 'app/result.html', context)
 

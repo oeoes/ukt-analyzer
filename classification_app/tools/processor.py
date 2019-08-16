@@ -57,3 +57,10 @@ def pbb(val):
           'Rp. 1.250.001 - Rp. 1.500.000', 'Lebih besar sama dengan 1.500.001'
           ]
     return ar[int(val)]
+
+def tanggungan(val):
+    ar = [
+        '1 Anak', '1 Anak + Tanggungan Lainya', '2 Anak', '2 Anak + Tanggungan Lainya', '3 Anak', '3 Anak + Tanggungan Lainya',
+        '4 Anak', '4 Anak + Tanggungan Lainya'
+    ]
+    return ar[int(val)]
